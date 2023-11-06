@@ -1,0 +1,53 @@
+version: '3'
+services:
+  kalibox:
+    image: kalilinux/kali-rolling
+    container_name: Eve
+    networks:
+      - pentest
+    hostname: attacker
+    stdin_open: true
+    tty: true
+    command: bash
+    restart: unless-stopped
+    cap_add: 
+      - NET_RAW 
+      - NET_ADMIN
+    volumes:
+      - eve-data:/data
+      
+  host:
+    image: kalilinux/kali-rolling
+    container_name: Host
+    networks:
+      - pentest
+    hostname: attacker
+    stdin_open: true
+    tty: true
+    command: bash
+    restart: unless-stopped
+    cap_add: 
+      - NET_RAW 
+      - NET_ADMIN
+
+  metasploitable2:
+    image: tleemcjr/metasploitable2
+    container_name: Victim
+    networks:
+      - pentest
+    hostname: victim
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    cap_add: 
+      - NET_RAW 
+      - NET_ADMIN
+
+networks:
+  pentest:
+    driver: bridge
+
+
+# run before `docker volume create eve_data`
+volumes:
+  eve-data:
