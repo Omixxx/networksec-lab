@@ -18,4 +18,4 @@ where `<container>` can be one of these elements:<br>
 
 ---
 
-Le cartelle `esercitazioni` contiene delle esercitazioni che ho svolto usando l'ambiente di pentesting e `programmazione su reti` contiene un po di architetture client-server
+The `exercises` folder contains some exercises I did using the pentesting environment and `network programming` contains some client-server architectures
