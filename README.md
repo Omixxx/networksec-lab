@@ -9,7 +9,7 @@ set up a dockerized environment in order to allow me to quickly access the pente
 
 Simply run `docker compose up -d` from the project root. The composite will spawn 3 containers connected to each other through an internal network, therefore capable of communicating.
 
-Now you can log into any of them via `docker exec <container> bash` <br>
+Now you can log into any of them via `docker exec -it <container> bash` <br>
 where `<container>` can be one of these elements:<br>
 
 - `Eve` the attacker (Kali)
