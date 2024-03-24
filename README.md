@@ -1,4 +1,4 @@
-![Screenshot](./static/screenshot.jpg)
+![Screenshot](./.static/screenshot.jpg)
 
 ## About the project
 
@@ -15,3 +15,7 @@ where `<container>` can be one of these elements:<br>
 - `Eve` the attacker (Kali)
 - `Victim` the victim (Metasploitable)
 - `Host` a third to carry out MITM-type attacks, or others attacks that requires a third machine
+
+---
+
+Le cartelle `esercitazioni` contiene delle esercitazioni che ho svolto usando l'ambiente di pentesting e `programmazione su reti` contiene un po di architetture client-server
