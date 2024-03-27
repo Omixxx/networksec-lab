@@ -3,7 +3,7 @@
 ## About the project
 
 Since my poor computer didn't have enough resources to spawn 3 virtual machines (Kali, Kali, Metasploitable) I decided to
-set up a dockerized environment in order to allow me to quickly access the pentesting environment, bypassing the slowness of the graphic interfaces, catapulting right where the action is!
+set up a dockerized environment in order to allow me to quickly access the pentesting environment, bypassing the slowness of the graphic interfaces and catapulting right where the action is!
 
 ## Configuration
 
